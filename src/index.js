@@ -2,7 +2,7 @@ var http = require('http');
 var https = require('https');
 var axios = require('axios');
 var docparser = require('docparser-node');
-var { docParserApiSecret } = require('./secrets');
+var { docParserApiSecret } = require('../secrets');
 
 //create a server object:
 http
