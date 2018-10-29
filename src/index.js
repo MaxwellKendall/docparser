@@ -16,9 +16,9 @@ http
     https.get(options,
       resp => {
           resp.on('data', (data) => {
-            console.log(data);
-            res.write(`yooo ${data}`); //write a response to the client
-            res.end(); //end the response
+            console.log(data.toString("utf-8")); // letting us see crazy binary in string
+            res.write(`yooo ${data}`); // write a response to the client
+            res.end(); // end the response
           })
       }
     );
